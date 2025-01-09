@@ -1,0 +1,77 @@
+Нерешённые мелочи, проблемы и вопросы:
+
+1.Отступы в навигационной панели у "li" тега не убираются.
+2.У разворачивающегося списка в навигационной панели не получается установить толщину и цвет границы (конкретно у тега "ol").
+3.Невидемая часть списка в навигационной панели при наводке на неё мыши всё равно отображается.
+
+4. Не удалось сделать:
+~Две картинки в секции, при наведени на одну из них появляется текст~
+html
+        <section id="Cloth-Armour--Leather-Armour">
+            <div class="two-blocks-one-line">
+                <div id="first-block">
+                    <h1>Cloth armour</h1>
+                </div>
+                <div id="second-block">
+                    <h1>Leather armour</h1>
+                </div>
+            </div>
+            <div class="two-blocks-one-line">
+                <div id="first-block">
+                    <h2>hover the image</h2>
+                </div>
+                <div id="second-block">
+                    <h2>hover the image</h2>
+                </div>
+            </div>
+            <div class="two-blocks-one-line">
+                <div id="first-block">
+                    <img src="image materials/Cloth armour.jpg" alt="Cloth amour">
+                </div>
+                <div id="second-block">
+                    <img src="image materials/Leather armour.jpg" alt="Leather armour">
+                </div>
+            </div>
+            <span class="black-line"></span>
+        </section>
+css
+div.two-blocks-one-line div{
+    text-align: center;
+    display: inline-block;
+    width: 49.869%;
+}
+
+section#Cloth-Armour--Leather-Armour div h1{
+    color: rgb(212, 56, 77);
+    font-size: 60px;
+    margin-bottom: 0;
+    margin-top: 5%;
+}
+
+section#Cloth-Armour--Leather-Armour div h2{
+    color: rgb(133, 133, 133);
+    text-transform: uppercase;
+    font-size: 27px;
+    margin-top: 5%;
+}
+
+section#Cloth-Armour--Leather-Armour img{
+    max-width: 42.5%;
+}
+
+section#Cloth-Armour--Leather-Armour>div.first-block>img:hover div#second-block{
+    margin-bottom: 100px;
+}
+
+
+~~~~
+section#Cloth-Armour--Leather-Armour div h2{
+    color: rgb(133, 133, 133);
+    text-transform: uppercase;
+    font-size: 27px;
+    margin-top: 5%;
+}
+~~~~
+
+5. В планах:
+~Сделать так, чтобы по нажатии кнопки рядом с картинкой появлялся текст и по ещё одному нажатию кнопки исчез.~
